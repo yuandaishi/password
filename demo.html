@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box" style="width: 500px;height: 500px;border: 1px solid #cccccc;margin: 30px auto;font-size: 0;line-height: 500px;text-align: center;position: relative;">
+			<a href="javascript:;" id="set" style="font-size: 30px;position: absolute;top:0;left: 10px;line-height: initial;">设置验证图形</a>
+			<a href="javascript:;" id="save" style="font-size: 30px;position: absolute;top:0;right: 10px;line-height: initial;">保存</a>
+		</div>
+	</body>
+	<script src="password.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		new psw({
+			id:"box",
+			width:300,
+			geometry:"circle",
+			num:3,
+			bg_color:"#cccccc",
+			link_line:"blue",
+			set_line:"brown",
+			error_line:"red",
+			success_line:"green"
+		});
+	</script>
+</html>
